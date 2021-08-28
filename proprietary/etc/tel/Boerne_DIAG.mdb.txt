@@ -1,0 +1,793 @@
+DbVersion
+1237807360
+<end>
+EnumVals
+1,0,1,0,Audio,ACM,AUDIO_PHY_GetVersion, void PHY_GetVersion ( void)
+2,1,1,0,SYSTEM,PROD,AT_SER, void AT_SER ( void)
+2,2,1,0,VALI_IF,ATCMD_IF,SendATCmd, void SendATCmd ( char * Cmd)
+2,3,1,0,VALI_IF,ATCMD_IF,SendATCmdChars, void SendATCmdChars ( char * Cmd)
+2,4,1,0,VALI_IF,ATCMD_IF,StartATCmdIF, void StartATCmdIF ()
+2,5,1,0,VALI_IF,ATCMD_IF,StopATCmdIF, void StopATCmdIF ()
+2,6,1,0,VALI_IF,MISC_IF,SendSystem, void SendSystem ( char * Cmd)
+1,7,1,0,Audio,ACM,AUDIO_PHY_DisablePath, void PHY_DisablePath ( void * data)
+1,8,1,0,Audio,ACM,AUDIO_PHY_MutePath, void PHY_MutePath ( void * data)
+1,9,1,0,Audio,ACM,AUDIO_PHY_SwitchPath, void PHY_SwitchPath ( void * data)
+1,10,1,0,Audio,ACM,AUDIO_SW_ReloadCalibrationData, void ReloadSWCalibrationData ( void)
+1,11,1,0,Audio,ACM,AUDIO_SW_SetVolume, void SetSWVolume ( void * data)
+1,12,1,0,Audio,ACM,AUDIO_SW_MutePath, void SetSWPathMute ( void * data)
+1,13,1,0,Audio,ACM,AUDIO_SW_GetGainConfigure, void GetSWGainConfigure ( void)
+1,14,1,0,Audio,ACM,AUDIO_SW_GetPathStatus, void GetSWPathStatus ( void)
+1,15,1,0,Audio,ACM,AUDIO_SW_GetVersion, void SW_GetVersion ( void)
+1,16,1,0,Audio,AudioEffect,AUDIO_AudioEffect_ReloadCalibrationData, void AE_ReloadCalibrationData ( void)
+1,17,1,0,Audio,VoipAcoustic,AUDIO_AE_SendCmd, void AE_SendCmd ( void * data)
+1,18,1,0,Audio,VoipAcoustic,AUDIO_AE_GetDeviceStatus, void AE_GetDeviceStatus ( void)
+1,19,1,0,Audio,VoipAcoustic,AUDIO_AE_ReloadFDI, void AE_ReloadFDI ( void)
+1,20,1,0,Audio,ACM,AUDIO_PHY_ReloadCalibrationData, void PHY_ReloadCalibrationData ( void)
+1,21,1,0,Audio,ACM,AUDIO_PHY_SetPathVolume, void PHY_SetPathVolume ( void * data)
+1,22,1,0,Audio,ACM,AUDIO_PHY_GetGainConfigure, void PHY_GetGainConfigure ( void)
+1,23,1,0,Audio,ACM,AUDIO_PHY_GetPathStatus, void PHY_GetPathStatus ( void)
+1,24,1,0,Audio,ACM,AUDIO_PHY_EnablePath, void PHY_EnablePath ( void * data)
+2,25,1,0,TELTRACE,CTRL,StartLogcatDiagLogging, void StartLogcatDiagLogging ( void * p)
+2,26,1,0,TELTRACE,CTRL,StopLogcatDiagLogging, void StopLogcatDiagLogging ( void * p)
+2,27,1,0,Diag,timeprint,diagRcvDataFromCPTask, void diagRcvDataFromCPTask ( void * data)
+1,28,1,0,Audio,ACM,AUDIO_PHY_GetCurrentConfigure, void PHY_GetCurrentConfigure ( void)
+5,29,1,0,Diag,Debug,udpInternalICATreadyon, void udpInternalICATreadyon ( void)
+5,30,1,0,Diag,Debug,udpInternalICATreadyoff, void udpInternalICATreadyoff ( void)
+7,31,1,0,Audio,Organ,GetSlopeOffset, void GetSlopeOffset ( void * data)
+7,32,1,0,Audio,Organ,ReadFdiCalibData, void ReadFdiCalibData ( void * data)
+1,1008,1,0,VALI_IF,ATCMD_IF,TestATCmdIF, void Atcmd_HW_test ( void * data)
+10,3024,1,0,EE_HANDLER,EE,eeInitConfiguration, void eeInitConfiguration ( void)
+10,3025,1,0,EE_HANDLER,EE,eePrintConfiguration, void eePrintConfiguration ( void)
+10,3026,1,0,EE_HANDLER,EE,eeReadConfiguration, void eeReadConfiguration_ICAT ( void)
+10,3027,1,0,EE_HANDLER,EE,eeSaveConfiguration, void eeSaveConfiguration ( void)
+10,3028,1,0,EE_HANDLER,EE,eeSetConfiguration, void eeSetConfiguration ( const EE_Configuration_t * pConfig , int len)
+13,3062,1,0,Diag,comMem,SaveComPostmortem, void SaveComPostmortem ( void)
+13,3063,1,0,Diag,comMem,SaveCom_Addr_Len, void SaveCom_Addr_Len ( void * p)
+14,3064,1,0,Diag,comMem,printComLoadTable, void printComLoadTable ( void)
+11,2016,1,0,Diag,Utils,battery_calibration, void battery_calibration ( void * CaliInputStruct)
+11,2017,1,0,Diag,Utils,GetVersionDiag, void _GetVersionDiag ( void)
+11,2018,1,0,Diag,Utils,ReadRTC, void _ReadRTC ( void)
+11,2019,1,0,Diag,Utils,SetRTC, void _SetRTC ( void * pDateAmdTime)
+11,2020,1,0,Diag,Utils,OutMsgBodyLimit, UINT32 diagGetOutMsgBodyLimit ( void)
+11,2021,1,0,EE_HANDLER,EE,EE_Test_Assert, void EeHandlerTestAssert ( void)
+11,2022,1,0,EE_HANDLER,EE,EE_Test_data_abort, void EeHandlerTestDataAbortExcep ( void)
+11,2023,1,0,FDI,Transport,ExtendedMode, void _ExtendetMode ()
+11,2024,1,0,FDI,Transport,FchangeMode, void _FChangeMode ( void * stInChMode)
+11,2025,1,0,FDI,Transport,Fclose, void _Fclose ( void * fileID)
+11,2026,1,0,FDI,Transport,Fopen, void _Fopen ( void * fInOpenStruct)
+11,2027,1,0,FDI,Transport,Format_Flash, void _Format ( void)
+11,2028,1,0,FDI,Transport,Fread, void _Fread ( void * pReadStruct)
+11,2030,1,0,FDI,Transport,Fseek, void _Fseek ( void * stFSeek)
+11,2031,1,0,FDI,Transport,FStatus, void _FStatus ( void * fileName)
+11,2032,1,0,FDI,Transport,Fwrite, void _Fwrite ( void * pWriteStruct)
+11,2034,1,0,FDI,Transport,GetFdiFdvAvailableSpace, void _GetFdiFdvAvailableSpace ( void * volName)
+11,2035,1,0,FDI,Transport,GetFdiFdvSize, void _GetFdiFdvSize ()
+11,2036,1,0,FDI,Transport,GetFdiVersion, void _GetFdiVersion ()
+11,2037,1,0,FDI,Transport,GetFdiVolumes, void _GetFdiVolumes ()
+11,2038,1,0,FDI,Transport,GetFileNameList, void _GetFileNameList ( void * wildcard)
+11,2039,1,0,FDI,Transport,GetMaxFileNameLen, void _GetMaxFileNameLength ()
+11,2040,1,0,FDI,Transport,GetNVMPath, void GetNVMPath ( void)
+10,2041,1,0,FDI,Transport,LoadBackNVM, BOOL LoadBackNVM ( void)
+10,2042,1,0,FDI,Transport,StoreBackNVM, BOOL StoreBackNVM ( void)
+11,2043,1,0,FDI,Transport,MkDir, void _MkDir ( void * MakeDirStruct)
+11,2044,1,0,FDI,Transport,Remove_File, void _Remove ( void * fileName)
+11,2045,1,0,FDI,Transport,RenameFile, void _RenameFile ( void * pRenameStruct)
+11,2046,1,0,FDI,Transport,RmDir, void _RmDir ( void * RemoveDirStruct)
+10,2049,1,0,FDI,Transport,IsBackNVMValid, BOOL IsBackNVMValid ( void)
+10,2050,1,0,FDI,Transport,IsBackNVMCfgValid, BOOL IsBackNVMCfgValid ( void)
+10,2053,1,0,FDI,Transport,CreateDefaultBackNVMCfg, void CreateDefaultBackNVMCfg ()
+11,2080,1,0,VALI_IF,MISC_IF,temp_RESET_IF, void ResetTarget ()
+11,2081,1,0,VALI_IF,CT_P_API,INIT_CT_Panalyzer, void INIT_CT_Panalyzer ()
+11,2082,1,0,VALI_IF,CT_P_API,TERM_CT_Panalyzer, void TERM_CT_Panalyzer ()
+11,2083,1,0,Validation,Utils,Get_IPM_Drivers_List, void Get_IPM_Drivers_List ()
+<end>
+EnumVals
+0,0,0,0,PRINTF,PRINTF,PRINTF,diagPrintf("%s")
+1,28,0,0,Audio,ACM,AUDIO_AE_Server_Command,diagStructPrintf("Audio_AE_Command: ",buf,len);
+1,29,0,0,Audio,ACM,AUDIO_PHY_Version,diagStructPrintf("PHY_GetVersion: ",buffer,36);
+1,55,0,0,Audio,ACM,AUDIO_PHY_CurrentConfigure,diagStructPrintf("PHY_GetCurrentConfigure: ",(void*)buffer,*size);
+1,58,0,0,Audio,ACM,AUDIO_PHY_GainConfigure,diagStructPrintf("PHY_GetGainConfigure: ",(void*)buffer,*size);
+1,59,0,0,Audio,ACM,AUDIO_PHY_PathStatus,diagStructPrintf("PHY_GetPathStatus: ",(void*)buffer,size);
+1,56,0,0,Audio,ACM,AUDIO_PHY_ReloadCalibrationData,diagPrintf("PHY_ReloadCalibrationData success! ");
+1,57,0,0,Audio,ACM,AUDIO_PHY_SetPathVolume,diagPrintf("PHY_SetPathVolume success: %d , digital Gain 0x%x , path_direction %s ",(ret==0)?1:0,gain.digital_gain,(gain.path_direction==1)?"OUTPU ":"IN ");
+1,30,0,0,Audio,ACM,AUDIO_PHY_EnablePath,diagPrintf("PHY_EnablePath success: %d , digital gain 0x%x , path_direction %s ",(ret==0)?1:0,gain.digital_gain,(gain.path_direction==1)?"OUTPU ":"IN ");
+1,32,0,0,Audio,ACM,PHY_DisablePath,diagPrintf("PHY_DisablePath success: %d ",(ret==0)?1:0);
+1,33,0,0,Audio,ACM,AUDIO_PHY_MutePath,diagPrintf("PHY_MutePath success: %d ",(ret==0)?1:0);
+1,27,0,0,Audio,ACM,AUDIO_PHY_SwitchPath,diagPrintf("PHY_SwitchPath success: %d , digital_gain 0x%x , path_direction %s ",(ret==0)?1:0,gain.digital_gain,(gain.path_direction==1)?"OUTPU ":"IN ");
+1,26,0,0,Audio,ACM,AUDIO_SW_CalibrationDataReloaded,diagStructPrintf("AUDIO_SW_CalibrationDataReloaded: ",(void*)&return_to_CT,sizeof(return_to_CT));
+1,31,0,0,Audio,ACM,AUDIO_SW_SetVolumeResult,diagStructPrintf("AUDIO_SW_SetVolumeResult: ",(void*)&return_to_CT,sizeof(return_to_CT));
+1,34,0,0,Audio,ACM,AUDIO_SW_MutePathResult,diagStructPrintf("AUDIO_SW_MutePathResult: ",(void*)&return_to_CT,sizeof(return_to_CT));
+1,15,0,0,Audio,ACM,AUDIO_SW_GainConfigure,diagStructPrintf("AUDIO_SW_GainConfigure: ",(void*)buffer,*size);
+1,16,0,0,Audio,ACM,AUDIO_SW_PathStatus,diagStructPrintf("AUDIO_SW_PathStatus: ",(void*)buffer,*size);
+1,17,0,0,Audio,ACM,AUDIO_SW_Version,diagStructPrintf("AUDIO_SW_Version: ",buffer,36);
+1,18,0,0,Audio,ACM,AUDIO_AE_ReloadCalibrationData,diagPrintf("AE_ReloadCalibrationData %s! ",ret==1?"success ":"faild ");
+1,19,0,0,Audio,ACM,AUDIO_AE_Command,diagStructPrintf("Audio_AE_Command: ",data,len);
+1,20,0,0,Audio,ACM,AUDIO_AE_Message,diagStructPrintf("Audio_AE_Message: ",buffer,len);
+1,21,0,0,Audio,ACM,AUDIO_AE_Command_Error,diagPrintf("Audio_AE_Command:failed ");
+1,22,0,0,Audio,ACM,AUDIO_AE_DeviceStatus,diagStructPrintf("Audio_AE_DeviceStatus: ",buffer,12);
+1,23,0,0,Audio,ACM,AUDIO_AE_DeviceStatus_Read_Error,diagPrintf("Audio_AE_DeviceStatus: get device failed! ");
+1,24,0,0,Audio,ACM,AUDIO_AE_DeviceStatus_Write_Error,diagPrintf("Audio_AE_DeviceStatus: socket is closed! Get failed! ");
+1,25,0,0,Audio,ACM,AUDIO_AE_ReloadFDI,diagPrintf("Audio_AE_ReloadFDI: Reload %s ",(ret==1)?"success ":"failed ");
+2,12,0,0,VALI_IF,ATCMD_IF,ATOUT_CHAR,diagPrintf("%s ",buffer);
+2,11,0,0,VALI_IF,ATCMD_IF,ATOUT,diagPrintf("%s ",buffer_out);
+2,1,0,0,Diag,Utils,Print_RTC,diagPrintf("%s ",sCalanderTime);
+2,2,0,0,Diag,Utils,PrintRTC_Failure,diagPrintf("Failed to read RTC ");
+2,8,0,0,VALI_IF,ATCMD_IF,ALREADYRUNNING,diagPrintf("Error -> Already Running! ");
+2,13,0,0,VALI_IF,ATCMD_IF,STOPIFNOTSTARTED,diagPrintf("Interface was not started jet ");
+2,9,0,0,VALI_IF,ATCMD_IF,ATCMDIFNOTSTARTEDINSENDAT,diagPrintf("Received AT Command but interface not started ");
+2,10,0,0,VALI_IF,ATCMD_IF,ATCMDIFNOTSTARTEDINSENDATCHAR,diagPrintf("Received AT Command but interface not started ");
+2,14,0,0,VALI_IF,MISC_IF,ATCMDSYSTEM,diagPrintf("Received command: %s ",buf);
+2,35,0,0,TELTRACE,TTGEN,TTGENMSG,diagPrintf("%s ",msg);
+2,36,0,0,TELTRACE,MAIN,UNKNOWN,diagPrintf("%s ",output);
+2,37,0,0,TELTRACE,MAIN,DEFAULT,diagPrintf("%s ",output);
+2,38,0,0,TELTRACE,MAIN,VERBOSE,diagPrintf("%s ",output);
+2,39,0,0,TELTRACE,MAIN,DEBUG,diagPrintf("%s ",output);
+2,40,0,0,TELTRACE,MAIN,INFO,diagPrintf("%s ",output);
+2,41,0,0,TELTRACE,MAIN,WARN,diagPrintf("%s ",output);
+2,42,0,0,TELTRACE,MAIN,ERROR,diagPrintf("%s ",output);
+2,43,0,0,TELTRACE,MAIN,FATAL,diagPrintf("%s ",output);
+2,44,0,0,TELTRACE,MAIN,SILENT,diagPrintf("%s ",output);
+2,45,0,0,TELTRACE,RADIO,UNKNOWN,diagPrintf("%s ",output);
+2,46,0,0,TELTRACE,RADIO,DEFAULT,diagPrintf("%s ",output);
+2,47,0,0,TELTRACE,RADIO,VERBOSE,diagPrintf("%s ",output);
+2,48,0,0,TELTRACE,RADIO,DEBUG,diagPrintf("%s ",output);
+2,49,0,0,TELTRACE,RADIO,INFO,diagPrintf("%s ",output);
+2,50,0,0,TELTRACE,RADIO,WARN,diagPrintf("%s ",output);
+2,51,0,0,TELTRACE,RADIO,ERROR,diagPrintf("%s ",output);
+2,52,0,0,TELTRACE,RADIO,FATAL,diagPrintf("%s ",output);
+2,53,0,0,TELTRACE,RADIO,SILENT,diagPrintf("%s ",output);
+2,54,0,0,DIAG,Dispatcher,ExportedPtr,diagPrintf("Dispatching exported function pointer [ 0x%x%x ] ",(((unsignedint)cat3CommandGlobalAddress[fID-_FirstCommandID])>>16)&0xffff,((unsignedint)cat3CommandGlobalAddress[fID-_FirstCommandID])&0xffff);
+2,3,0,0,SW_PLAT,DIAG,COMMANDID_WRONG,diagPrintf("DIAG - command received with ID out of range: %d ",fID);
+2,6,0,0,SW_PLAT,DIAG,RX_SERVICEID_WRONG,diagPrintf("DIAG - msg received with wrong RX service ID , the serviceID is %d ",serviceID);
+2,7,0,0,SYSTEM,PROD,AT_SER_OK,diagPrintf("OK ");
+2,4,0,0,SW_PLAT,DIAG,ERROR_PRINTFTYPE,diagTextPrintf("DIAG - problem in diagPrintfthe - Report Param Info -> Type is wrong ");
+2,5,0,0,SW_PLAT,DIAG,PRINTF_ERROR_IN_PARAMS_NUMBER,diagTextPrintf("DIAG - problem in diagPrintf - the Report Params number is wrong , API called is printf - but the code is for another API ");
+5,60,0,0,Diag,Debug,UDPicatReadyOn_1,diagPrintf("Send ICATready ( internal ) when binded ")
+5,61,0,0,Diag,Debug,UDPicatReadyOff_2,diagPrintf("DO NOT SEND ICATready ( internal on bind ) ")
+7,62,0,0,Audio,Organ,AUDIO_ORGAN_SlopeOffset,diagStructPrintf("",(void*)slopeOffset,len);
+7,63,0,0,Audio,Organ,AUDIO_ORGAN_ReadFdiDataOK,diagStructPrintf("OK ",((void*)0),0);
+7,64,0,0,Audio,Organ,AUDIO_ORGAN_ReadFdiDataERROR,diagStructPrintf("ERROR ",((void*)0),0);
+7,65,0,0,Audio,HW,AUDIO_HW_PathEnableIgnore,diagStructPrintf("OK ",((void*)0),0);
+1,1008,0,0,VALI_IF,ATCMD,ATCMDTEST,diagPrintf("Atcmd_HW_test ");
+10,3024,0,0,EE_HANDLER,EE,EE_CONFIG_PRINT,diagStructPrintf("EE CONFIGURATION: %S{EE_Configuration_t}",&eeConfiguration,sizeof(eeConfiguration));
+11,3090,0,0,EE_HANDLER,EE_LOG,logOpen,diagPrintf("Logging %s OPEN\n ",p->streamName);
+11,3091,0,0,EE_HANDLER,EE_LOG,logBlock,diagPrintf("Logging into %s block %d\n ",p->streamName,p->putIdx);
+11,3092,0,0,EE_HANDLER,EE_LOG,logClose,diagPrintf("Logging %s CLOSE\n ",p->streamName);
+11,3093,0,0,EE_HANDLER,EE_LOG,logDbg0,diagPrintf("Line_%d: cmdState_NONE , %d\n ",line,p->putIdx);
+11,3094,0,0,EE_HANDLER,EE_LOG,logDbg1,diagPrintf("Line_%d: cmdState_OPEN , %d\n ",line,p->putIdx);
+11,3095,0,0,EE_HANDLER,EE_LOG,logDbg2,diagPrintf("Line_%d: cmdState_RECO , %d\n ",line,p->putIdx);
+11,3096,0,0,EE_HANDLER,EE_LOG,logDbg3,diagPrintf("Line_%d: cmdState_CLOSE , %d\n ",line,p->putIdx);
+11,3097,0,0,EE_HANDLER,EE_LOG,logDbg4,diagPrintf("Line_%d: cmdState_UNKN , %d\n ",line,p->putIdx);
+11,3098,0,0,EE_HANDLER,EE_LOG,NoLog,diagPrintf("%s file NOT requested\n ",fileName);
+11,3025,0,0,EE_HANDLER,EE_LOG,ABNORMAL,diagPrintf("%s: STATE ABNORMAL: opened , but streaming never started\n ",p->streamName);
+11,3026,0,0,EE_HANDLER,EE_LOG,STALL,diagPrintf("%s: RX streaming stalled. ABORT\n ",p->streamName);
+13,3101,0,0,SW_PLAT,PERFORMANCE,SAVE2FILE0,diagPrintf("COMM MEM - DUMP File %s: nothing to save ",fNameBuf);
+13,3102,0,0,SW_PLAT,PERFORMANCE,SAVE2FILE,diagPrintf("COMM MEM - DUMP File %s: %ld bytes saved ",fNameBuf,count);
+13,3030,0,0,Diag,comMem,EE_LOG_TXT,diagPrintf("COMM EE LOG: %s ",pEElog->desc);
+13,3028,0,0,Diag,comMem,EE_LOG,diagStructPrintf("COMM EE LOG: %S{EE_Entry_t}",(UINT16*)pEElog,sizeof(EE_Entry_t));
+13,3029,0,0,Diag,comMem,EE_LOG_NOERR,diagPrintf("COMM WDT expired ( NOT caused by ASSERT ) ");
+13,3027,0,0,Diag,comMem,DDR_RW,diagPrintf("WAIT 1 MIN! Be patient! DDR_RW Dumping 0x%lx bytes of DDR_RW ",len);
+14,3031,0,0,Diag,comMem,image,diagPrintf("COMM image BEGIN = 0x%lx , END = 0x%lx , rw-ram-Begin = 0x%lx ",((UINT8*)((UINT32)(pLoadTable->imageBegin))),((UINT8*)((UINT32)(pLoadTable->imageEnd))),((UINT8*)((UINT32)(pLoadTable->ramRWbegin))));
+14,3032,0,0,Diag,comMem,imageNO,diagPrintf("COMM loadTable not found ");
+11,2029,0,0,FDI,Transport,BackNVMOpenError,diagPrintf("Cannot open BackNVM: %s ","/ dev / mtdblock1 ");
+11,2077,0,0,FDI,Transport,StoreBackNVMLimitError,diagPrintf("BackNVM limit err: %d > %d ",size+len+4+4,(0x20000-0x200));
+11,2074,0,0,FDI,Transport,StoreBackNVMError,diagPrintf("Error on storing %s to BackNVM [ %d ] ",p,num);
+11,2076,0,0,FDI,Transport,StoreBackNVMFile,diagPrintf("Succeeded in storing %s to BackNVM [ %d ] ",p,num);
+11,2062,0,0,FDI,Transport,LoadBackNVMError,diagPrintf("Error on loading %s from BackNVM [ %d ] ",p,num);
+11,2066,0,0,FDI,Transport,LoadBackNVMWarning,diagPrintf("Length mismatch: loading %s from BackNVM [ %d ] ",p,num);
+11,2064,0,0,FDI,Transport,LoadBackNVMFile,diagPrintf("Succeeded in loading %s from BackNVM [ %d ] ",p,num);
+10,2088,0,0,FDI,Transport,BackNVMValid,diagPrintf("Valid BackNVM ( CRC = %d ) at %d / %d / %d , %d:%d:%d ",crcBackNVM,day,mon,year,hour,min,sec);
+10,2089,0,0,FDI,Transport,BackNVMInvalid,diagPrintf("Invalid BackNVM ( CRC = %d ) at %d / %d / %d , %d:%d:%d ",crcBackNVM,day,mon,year,hour,min,sec);
+10,2090,0,0,FDI,Transport,BackNVMCfgInvalid,diagPrintf("Invalid BackNVM.cfg ");
+10,2091,0,0,FDI,Transport,BackNVMCfgValid,diagPrintf("Valid BackNVM.cfg ");
+11,2078,0,0,FDI,Transport,StoreBackNVMSuccess,diagPrintf("Succeeded in storing %d files to BackNVM ",num);
+11,2075,0,0,FDI,Transport,StoreBackNVMFailure,diagPrintf("Failed to store BackNVM ");
+11,2065,0,0,FDI,Transport,LoadBackNVMSuccess,diagPrintf("Succeeded in loading %d files from BackNVM ",num);
+11,2063,0,0,FDI,Transport,LoadBackNVMFailure,diagPrintf("Failed to load BackNVM ");
+10,2096,0,0,FDI,Transport,CreateDefaultBackNVMCfgSuccess,diagPrintf("Default %s created ","BackNVM.cfg ");
+10,2097,0,0,FDI,Transport,CreateDefaultBackNVMCfgFail,diagPrintf("Error: Create default %s BACK NVM dir fail ","BackNVM.cfg ");
+11,2035,0,0,FDI,Transport,F_Get_NVM_Path,diagStructPrintf("%S{NVMPathStruct}",(void*)&path,sizeof(NVMPathStruct));
+11,2036,0,0,FDI,Transport,F_Get_NVM_Path_Error,diagPrintf("Get NVM Path error ");
+11,2022,0,0,Diag,Utils,MaxOutMsgBodySize,diagPrintf("diag ( target ) to ACAT: %ld ",msgBodySize);
+11,2039,0,0,FDI,Transport,F_Open_Return_FileID,diagStructPrintf("%S{FOpenReturnStruct}",(void*)&retOpenStruct,sizeof(FOpenReturnStruct));
+11,2038,0,0,FDI,Transport,F_Open_Error,diagPrintf("fopen %s error ",fOpenInSt->fileName);
+11,2034,0,0,FDI,Transport,F_Close_Success,diagPrintf("File ( ID: %lu ) was succesfully closed ",hFileID);
+11,2033,0,0,FDI,Transport,F_Close_Error,diagPrintf("File ( ID: %lu ) close error ",hFileID);
+11,2040,0,0,FDI,Transport,F_Read_Bad_Input,diagPrintf("Number of packets to read exceeded the maximal number ( %d > %d ) ",numBytesToRead,diagGetOutMsgBodyLimit());
+11,2043,0,0,FDI,Transport,F_Read_Packet,diagStructPrintf("%S{ReadReturnStruct}",(void*)pRetReadBuf,nReadBufAllocSize);
+11,2041,0,0,FDI,Transport,F_Read_Error,diagPrintf("File read error ( ID: %lu ) ",hFileID);
+11,2042,0,0,FDI,Transport,F_Read_Malloc_Error,diagPrintf("Malloc in Fread failed ");
+11,2050,0,0,FDI,Transport,F_Write_Success,diagPrintf("The Packet was written successfully ( packet size %d ) ",numBytesToWrite);
+11,2049,0,0,FDI,Transport,F_Write_Error,diagPrintf("File write error ( ID: %lu ) ",pws->fileID);
+11,2058,0,0,FDI,Transport,Format_Error,diagPrintf("Flash format is NOT supported ");
+11,2071,0,0,FDI,Transport,Remove_Success,diagPrintf("The file was successfully deleted ");
+11,2070,0,0,FDI,Transport,Remove_Error,diagPrintf("An error occurred while deleting file ");
+11,2057,0,0,FDI,Transport,FName_LIST_NOTEXISTS,diagPrintf("Currently there are no files on flash matching wildcard - %s ",(char*)wildcard);
+11,2037,0,0,FDI,Transport,F_NameList_Packet,diagStructPrintf("%S{FNamesReturnStruct}",(void*)&retFNamesStruct,sizeof(FNamesReturnStruct));
+11,2046,0,0,FDI,Transport,F_Rename_Succes,diagPrintf("The file was successfully renamed to %s ",pRenameSt->fNewName);
+11,2045,0,0,FDI,Transport,F_Rename_Error,diagPrintf("Error occured while trying to change file name ");
+11,2048,0,0,FDI,Transport,F_Status_Success,diagPrintf("( %d ) ",fStatus);
+11,2047,0,0,FDI,Transport,F_Status_Error,diagPrintf("An error occurred while checking the file status ");
+11,2032,0,0,FDI,Transport,F_ChangeMode_Success,diagPrintf("mode of %s was successfully changed ",fileName);
+11,2031,0,0,FDI,Transport,F_ChangeMode_Error,diagPrintf("An error occurred while changing file [ %s ] to mode %lu ",fileName,newMode);
+11,2060,0,0,FDI,Transport,Fseek_Success,diagPrintf("File ( ID: %lu ) indicator was offset by %lu from %lu ",fdvSeek->fileID,fdvSeek->offset,fdvSeek->whereFrom);
+11,2059,0,0,FDI,Transport,Fseek_Error,diagPrintf("Error occured while trying to seek within file ( ID: %lu ) ",fdvSeek->fileID);
+11,2067,0,0,FDI,Transport,MaxFileNameLen,diagPrintf("%d ",256);
+11,2055,0,0,FDI,Transport,FdvSize,diagStructPrintf("%S{FdvSizeStruct}",(void*)&fdvSize,sizeof(FdvSizeStruct));
+11,2056,0,0,FDI,Transport,FdvSize_Error,diagPrintf("Error: cannot get NVM size ");
+11,2053,0,0,FDI,Transport,FdvAvailableSize,diagStructPrintf("%S{FdvAvailableSpaceStruct}",(void*)&fdvSize,sizeof(FdvAvailableSpaceStruct));
+11,2054,0,0,FDI,Transport,FdvAvailableSize_Error,diagPrintf("Error: cannot get available NVM space ");
+11,2051,0,0,FDI,Transport,FDI71,diagPrintf("FDI 71 ");
+11,2052,0,0,FDI,Transport,FDI721,diagPrintf("Aug06:upgrade to FDI721 ");
+11,2069,0,0,FDI,Transport,mkdir_Success,diagPrintf("Make Directory: %s ",MakeDirSt->dirName);
+11,2068,0,0,FDI,Transport,mkdir_Error,diagPrintf("mkdir %s error ",MakeDirSt->dirName);
+11,2073,0,0,FDI,Transport,Rmdir_Success,diagPrintf("Remove Directory: %s ",RemoveDirSt->dirName);
+11,2072,0,0,FDI,Transport,Rmdir_Error,diagPrintf("rmdir: %s error ",RemoveDirSt->dirName);
+11,2061,0,0,FDI,Transport,GetFdiVolumes_List,diagStructPrintf("%S{FdvVolumesStruct}",(void*)&retFdvVolumesStruct,sizeof(FdvVolumesStruct));
+11,2030,0,0,FDI,Transport,ExtendetMode,diagPrintf("FDI7 Extendet Mode is ON ");
+11,2026,0,0,Diag,Utils,SetRTC_Failure,diagPrintf("RTC set failed , check the input parameter validity. ");
+11,2027,0,0,Diag,Utils,SetRTC_Success,diagPrintf("RTC was successfully set. ");
+11,2023,0,0,Diag,Utils,ReadRTC_Calendar,diagStructPrintf("The CaledarTime is %S{RTC_CalendarTime}",(void*)&Ctime,sizeof(RTC_CalendarTime));
+11,2025,0,0,Diag,Utils,ReadRTC_Success,diagPrintf("%s ",sCalanderTime);
+11,2024,0,0,Diag,Utils,ReadRTC_Failure,diagPrintf("Failed to read RTC ");
+11,2028,0,0,Diag,Utils,SWVersion,diagPrintf("Tavor Linux V6.6 ");
+11,2080,0,0,VALI_IF,MISC_IF,RESET_IF_Info,diagPrintf("Reset... ");
+11,2079,0,0,VALI_IF,MISC_IF,RESET_IF_Fail,diagPrintf("Reset failed. ");
+11,2081,0,0,VALI_IF,MISC_IF,RESET_IF_Timeout,diagPrintf("Reset timeout. ");
+11,2146,0,0,VALI_IF,CT_P_API,INIT_SUCCESS,diagPrintf("[ CT_P ] CT_Panalyzer INIT success ");
+11,2147,0,0,VALI_IF,CT_P_API,TERM_SUCCESS,diagPrintf("[ CT_P ] CT_Panalyzer TERM success ");
+11,2148,0,0,Validation,Utils,Export_IPMDrv_list,diagStructPrintf("VIF: Export_IPMDrv_list%S{IPM_Drv_Export_struct_TYPE}",((void*)&retData),sizeof(IPM_Drv_Export_struct_TYPE));
+11,2018,0,0,Diag,Utils,battery_cali_ok,diagPrintf("OK ");
+11,2017,0,0,Diag,Utils,battery_cali_error,diagPrintf("ERROR ");
+11,2016,0,0,Diag,Utils,battery_cali_debug,diagPrintf("%s ",buf);
+11,2019,0,0,Diag,Utils,battery_calibration,diagStructPrintf("DIAG: calibration_return%S{CaliReturnStruct}",((void*)&TrimValue),sizeof(CaliReturnStruct));
+11,2021,0,0,Diag,Utils,bettery_calibration_vbat,diagPrintf("DIAG: battery calibration_vbat: %d ",calibration_vbat);
+11,2020,0,0,Diag,Utils,battery_calibration_ibat,diagPrintf("DIAG: battery calibration_ibat: %d ",calibration_ibat);
+<end>
+Parameters
+OSType,Linux
+<end>
+MonitorParams
+<end>
+nvm
+DiagStats_CP_AP_S,,,,,0,0,,
+DiagStats_CP_AP_S,,CP_TimeStamp,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,CP_bytes_produced,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,CP_bytes_dropped,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,CP_bytes_sent,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,CP_bytes_sent_tot_time,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,CP_max_time_byteOint,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_TimeStamp,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_bytes_produced,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_bytes_dropped,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_bytes_sent,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_bytes_sent_tot_time,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_max_time_byteOext,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_bytes_recieved_from_CP,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,CP_struct_size,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_struct_size,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,CP_bytes_added_INTif,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_bytes_removed_INTif,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagStats_CP_AP_S,,AP_bytes_added_ExtIf,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+diagMsgLimitSet_S,,,,,0,0,,
+diagMsgLimitSet_S,,diagMaxMsgOutLimit,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+diagMsgLimitSet_S,,diagMaxMsgOutWarning,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+diagMsgLimitSet_S,,diagMaxMsgInLimit,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+diagMsgLimitSet_S,,diagMaxMsgInWarning,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagLoggerDefs,,,,,0,0,,
+DiagLoggerDefs,,bEnabled,BOOL,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagLoggerDefs,,eProtocolType,enum,ProtocolType,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagLoggerDefs,,nMaxDataPerTrace,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagTransmitTxConfig,,,,,0,0,,
+DiagTransmitTxConfig,,MIN_BUFFERS_NUM,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagTransmitTxConfig,,TASK_TIMER_PERIOD,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+DiagTransmitTxConfig,,task_priority,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+hifiParam,,,,,0,0,,
+hifiParam,,paramType,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+hifiParam,,deviceType,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+hifiParam,,streamType,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+hifiParam,,formatType,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+hifiParam,,volumeIndex,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+hifiParam,,dBIndex,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_CalendarTime,,,,,0,0,,
+RTC_CalendarTime,,second,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_CalendarTime,,minute,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_CalendarTime,,hour,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_CalendarTime,,day,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_CalendarTime,,month,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_CalendarTime,,year,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,,,,0,0,,
+EE_RegInfo_Data_t,,r0,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r1,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r2,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r3,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r4,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r5,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r6,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r7,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r8,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r9,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r10,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r11,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,r12,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,SP,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,LR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,PC,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,cpsr,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,FSR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,FAR_R,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,,PMU_reg,EE_PMU_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_XscGasketRegs,,,,,0,0,,
+EE_XscGasketRegs,,_PESR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_XscGasketRegs,,_XESR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_XscGasketRegs,,_PEAR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_XscGasketRegs,,_FEAR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_XscGasketRegs,,_SEAR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_XscGasketRegs,,_GEAR,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,,,,0,0,,
+EE_Entry_t,,fileWriteOffset,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,type,EE_entry_t,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_CalendarTime,EE_Entry_t,,,dateAndTime,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,desc,char,char,100,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_RegInfo_Data_t,EE_Entry_t,,,RegInfo,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,contextBufferType,EE_ContextDataType_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,contextBuffer,UINT8,unsigned char,512,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,CHKPT0,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,CHKPT1,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,taskName,char,char,10,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,taskStackStart,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,taskStackEnd,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_XscGasketRegs,EE_Entry_t,,,xscaleGasketRegs,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Entry_t,,warningCntr,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,,,,0,0,,
+NVM_Header_ts,,StructSize,unsigned,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,NumofStructs,unsigned,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,StructName,char,char,64,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,Date,char,char,32,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,time,char,char,32,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,Version,char,char,64,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,HW_ID,char,char,32,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_Header_ts,,CalibVersion,char,char,32,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_DeferredCfg_t,,,,,0,0,,
+EE_DeferredCfg_t,,enable,EE_DeferredMode_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_DeferredCfg_t,,deferIntermediateActions,EE_OnOff_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_DeferredCfg_t,,limitMs,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_DeferredCfg_t,,limitHits,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_DeferredCfg_t,,reserved2,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,,,,0,0,,
+EE_Configuration_t,,AssertHandlerOn,EE_OnOff_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,ExcepHandlerOn,EE_OnOff_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,WarningHandlerOn,EE_WarningOn_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,powerUpLogOn,EE_OnOff_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,extHandlersOn,EE_OnOff_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,printRecentLogOnStartup,EE_OnOff_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,finalAction,FinalAct_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,EELogFileSize,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,delayOnStartup,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,assertContextBufType,EE_ContextType_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,exceptionContextBufType,EE_ContextType_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,warningContextBufType,EE_ContextType_t,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_DeferredCfg_t,EE_Configuration_t,,,deferredCfg,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,wdtConfigTime,EE_WdtTimeCfg_t,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,sysEeHandlerLimit,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,dumpDdrSizeBytes,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_Configuration_t,,reserved,UINT8,unsigned char,24,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_PostmortemDesc_Entry,,,,,0,0,,
+EE_PostmortemDesc_Entry,,name,char,char,8,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_PostmortemDesc_Entry,,p_bufAddr,pointer,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+EE_PostmortemDesc_Entry,,bufLen,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,,,,,0,0,,
+NVM_FILE_INFO,,file_name,CHAR,signed char,67,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,,time,INT32,signed long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,,date,INT32,signed long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,,size,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,,data_id,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,,dir_id,INT32,signed long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,,plr_date,INT32,signed long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_FIND_FIRST_RESPONSE_STRUCT,,,,,0,0,,
+NVM_FILE_FIND_FIRST_RESPONSE_STRUCT,,op_code,NVM_OP_CODE,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,NVM_FILE_FIND_FIRST_RESPONSE_STRUCT,,,fileParms,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_FIND_FIRST_RESPONSE_STRUCT,,error_code,NVM_STATUS_T,NVM_STATUS_T,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_FIND_NEXT_RESPONSE_STRUCT,,,,,0,0,,
+NVM_FILE_FIND_NEXT_RESPONSE_STRUCT,,op_code,NVM_OP_CODE,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_INFO,NVM_FILE_FIND_NEXT_RESPONSE_STRUCT,,,fileParms,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVM_FILE_FIND_NEXT_RESPONSE_STRUCT,,error_code,NVM_STATUS_T,NVM_STATUS_T,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,,,,0,0,,
+RTC_GET_RESPONSE_STRUCT,,op_code,NVM_OP_CODE,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,error_code,NVM_STATUS_T,NVM_STATUS_T,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,second,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,minute,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,hour,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,day,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,month,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RTC_GET_RESPONSE_STRUCT,,year,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+InputStruct,,,,,0,0,,
+InputStruct,,cmd,unsigned,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+InputStruct,,data,short,short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+CaliReturnStruct,,,,,0,0,,
+CaliReturnStruct,,d4,unsigned,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+CaliReturnStruct,,d5,unsigned,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+CaliReturnStruct,,d7,unsigned,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+CaliReturnStruct,,offset_ibat,signed,signed short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+CaliReturnStruct,,offset_vbat,signed,signed short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+CaliReturnStruct,,slope_low,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+CaliReturnStruct,,slope_high,unsigned,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+NVMPathStruct,,,,,0,0,,
+NVMPathStruct,,pathName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FOpenInputStruct,,,,,0,0,,
+FOpenInputStruct,,fileName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FOpenInputStruct,,mode,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FOpenReturnStruct,,,,,0,0,,
+FOpenReturnStruct,,fileID,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FOpenReturnStruct,,fileName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+WriteInputStruct,,,,,0,0,,
+WriteInputStruct,,fileID,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+WriteInputStruct,,PacketSize,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+WriteInputStruct,,writeBuf,char,char,1024,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ReadInputStruct,,,,,0,0,,
+ReadInputStruct,,fileID,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ReadInputStruct,,bufferSize,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ReadReturnStruct,,,,,0,0,,
+ReadReturnStruct,,PacketOK,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ReadReturnStruct,,LastPacket,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ReadReturnStruct,,PacketSize,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ReadReturnStruct,,readBuf,char,char,1024,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FNamesReturnStruct,,,,,0,0,,
+FNamesReturnStruct,,fInfoList,char,char,1024,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FNamesReturnStruct,,fListLen,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FNamesReturnStruct,,LastPacket,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RenameInputStruct,,,,,0,0,,
+RenameInputStruct,,fOldName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RenameInputStruct,,fNewName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ChangModeStruct,,,,,0,0,,
+ChangModeStruct,,fileName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ChangModeStruct,,newMode,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FSeekStruct,,,,,0,0,,
+FSeekStruct,,fileID,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FSeekStruct,,offset,long,long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FSeekStruct,,whereFrom,int,long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FdvSizeStruct,,,,,0,0,,
+FdvSizeStruct,,fdvSize,unsigned,unsigned long long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FdvAvailableSpaceStruct,,,,,0,0,,
+FdvAvailableSpaceStruct,,fdvAvailableSpace,UINT32,unsigned long,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+RmDirStruct,,,,,0,0,,
+RmDirStruct,,dirName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+MkDirStruct,,,,,0,0,,
+MkDirStruct,,dirName,char,char,256,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+MkDirStruct,,mode,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FdvVolumesStruct,,,,,0,0,,
+FdvVolumesStruct,,ffs_num_volumes,UINT8,unsigned char,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FdvVolumesStruct,,volumes,char,char,6,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+FdvVolumesStruct,,volumes,char,char,10,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ouputIPM_DrvDetails,,,,,0,0,,
+ouputIPM_DrvDetails,,id,UINT16,unsigned short,1,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+ouputIPM_DrvDetails,,name,UINT16,unsigned short,32,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+IPM_Drv_Export_struct_TYPE,,,,,0,0,,
+ouputIPM_DrvDetails,IPM_Drv_Export_struct_TYPE,,,IPMDrv_Params,32,0,,@ITEM_MODE@@ITEM_UNIT@@ITEM_DEPENDENCY@
+<end>
+EnumsTitle
+<end>
+Enums
+diagErrStatesE,diagErrNoMemory,0,
+diagErrStatesE,diagErrMemoryOK,1,
+diagErrStatesE,diagErrExtQueueCongest,2,
+diagErrStatesE,diagErrINTQueueCongest,3,
+diagErrStatesE,diagErrCMIQueueCongest,4,
+diagErrStatesE,diagErrExtQueueOK,5,
+diagErrStatesE,diagErrINTQueueOK,6,
+diagErrStatesE,diagErrCMIQueueOK,7,
+diagErrStatesE,diagErrMSGmaxLen,8,
+diagErrStatesE,diagErrMsgwarningLen,9,
+ProtocolType,PROTOCOL_TYPE_0,0,
+ProtocolType,MAX_PROTOCOL_TYPES,1,
+EActiveConnectionType,tNoConnection,0,
+EActiveConnectionType,tUSBConnection,1,
+EActiveConnectionType,tTCPConnection,2,
+EActiveConnectionType,tUDPConnection,3,
+EActiveConnectionType,tUARTConnection,4,
+EActiveConnectionType,tSSPConnection,5,
+EActiveConnectionType,tVIRTIOConnection,6,
+EActiveConnectionType,tMSLConnection,7,
+EActiveConnectionType,tSHMConnection,8,
+EActiveConnectionType,tLocalConnection,9,
+COMDEV_NAME,DIAG_COMMDEV_EXT,0,
+COMDEV_NAME,DIAG_COMMDEV_INT,1,
+COMDEV_NAME,DIAG_COMMDEV_CMI,2,
+COMDEV_NAME,DIAG_COMMDEV_CMI1,2,
+COMDEV_NAME,DIAG_COMMDEV_CMI2,3,
+COMDEV_NAME,DIAG_COMMDEV_CMI3,4,
+COMDEV_NAME,DIAG_COMMDEV_CMI4,5,
+COMDEV_NAME,DIAG_COMMDEV_CMI5,6,
+COMDEV_NAME,DIAG_COMMDEV_RX_MAX,6,
+COMDEV_NAME,DIAG_COMMDEV_NODEVICE,239,
+COMDEV_NAME,DIAG_COMMDEV_DUMMY,536870911,
+ORGAN_PATH,MUSIC_MP3_SPK,0,
+ORGAN_PATH,MUSIC_AAC_SPK,1,
+ORGAN_PATH,MUSIC_OGG_SPK,2,
+ORGAN_PATH,MUSIC_MIDI_SPK,3,
+ORGAN_PATH,MUSIC_AMR_SPK,4,
+ORGAN_PATH,MUSIC_WAV_SPK,5,
+ORGAN_PATH,MUSIC_TONE_SPK,6,
+ORGAN_PATH,MUSIC_AVI_SPK,7,
+ORGAN_PATH,MUSIC_MP4_SPK,8,
+ORGAN_PATH,MUSIC_RMVB_SPK,9,
+ORGAN_PATH,MUSIC_MP3_HS,10,
+ORGAN_PATH,MUSIC_AAC_HS,11,
+ORGAN_PATH,MUSIC_OGG_HS,12,
+ORGAN_PATH,MUSIC_MIDI_HS,13,
+ORGAN_PATH,MUSIC_AMR_HS,14,
+ORGAN_PATH,MUSIC_WAV_HS,15,
+ORGAN_PATH,MUSIC_TONE_HS,16,
+ORGAN_PATH,MUSIC_AVI_HS,17,
+ORGAN_PATH,MUSIC_MP4_HS,18,
+ORGAN_PATH,MUSIC_RMVB_HS,19,
+ORGAN_PATH,MUSIC_MP3_BT,20,
+ORGAN_PATH,MUSIC_AAC_BT,21,
+ORGAN_PATH,MUSIC_OGG_BT,22,
+ORGAN_PATH,MUSIC_MIDI_BT,23,
+ORGAN_PATH,MUSIC_AMR_BT,24,
+ORGAN_PATH,MUSIC_WAV_BT,25,
+ORGAN_PATH,MUSIC_TONE_BT,26,
+ORGAN_PATH,MUSIC_AVI_BT,27,
+ORGAN_PATH,MUSIC_MP4_BT,28,
+ORGAN_PATH,MUSIC_RMVB_BT,29,
+ORGAN_PATH,SYSTEM_MP3_SPK,30,
+ORGAN_PATH,SYSTEM_AAC_SPK,31,
+ORGAN_PATH,SYSTEM_OGG_SPK,32,
+ORGAN_PATH,SYSTEM_MIDI_SPK,33,
+ORGAN_PATH,SYSTEM_AMR_SPK,34,
+ORGAN_PATH,SYSTEM_WAV_SPK,35,
+ORGAN_PATH,SYSTEM_TONE_SPK,36,
+ORGAN_PATH,SYSTEM_MP3_HS,37,
+ORGAN_PATH,SYSTEM_AAC_HS,38,
+ORGAN_PATH,SYSTEM_OGG_HS,39,
+ORGAN_PATH,SYSTEM_MIDI_HS,40,
+ORGAN_PATH,SYSTEM_AMR_HS,41,
+ORGAN_PATH,SYSTEM_WAV_HS,42,
+ORGAN_PATH,SYSTEM_TONE_HS,43,
+ORGAN_PATH,RING_MP3_SPK,44,
+ORGAN_PATH,RING_AAC_SPK,45,
+ORGAN_PATH,RING_OGG_SPK,46,
+ORGAN_PATH,RING_MIDI_SPK,47,
+ORGAN_PATH,RING_AMR_SPK,48,
+ORGAN_PATH,RING_WAV_SPK,49,
+ORGAN_PATH,RING_TONE_SPK,50,
+ORGAN_PATH,RING_MP3_HS,51,
+ORGAN_PATH,RING_AAC_HS,52,
+ORGAN_PATH,RING_OGG_HS,53,
+ORGAN_PATH,RING_MIDI_HS,54,
+ORGAN_PATH,RING_AMR_HS,55,
+ORGAN_PATH,RING_WAV_HS,56,
+ORGAN_PATH,RING_TONE_HS,57,
+ORGAN_PATH,RING_MP3_SPK_FSPK,58,
+ORGAN_PATH,RING_AAC_SPK_FSPK,59,
+ORGAN_PATH,RING_OGG_SPK_FSPK,60,
+ORGAN_PATH,RING_MIDI_SPK_FSPK,61,
+ORGAN_PATH,RING_AMR_SPK_FSPK,62,
+ORGAN_PATH,RING_WAV_SPK_FSPK,63,
+ORGAN_PATH,RING_TONE_SPK_FSPK,64,
+ORGAN_PATH,RING_MP3_HS_FSPK,65,
+ORGAN_PATH,RING_AAC_HS_FSPK,66,
+ORGAN_PATH,RING_OGG_HS_FSPK,67,
+ORGAN_PATH,RING_MIDI_HS_FSPK,68,
+ORGAN_PATH,RING_AMR_HS_FSPK,69,
+ORGAN_PATH,RING_WAV_HS_FSPK,70,
+ORGAN_PATH,RING_TONE_HS_FSPK,71,
+ORGAN_PATH,ALARM_MP3_SPK,72,
+ORGAN_PATH,ALARM_AAC_SPK,73,
+ORGAN_PATH,ALARM_OGG_SPK,74,
+ORGAN_PATH,ALARM_MIDI_SPK,75,
+ORGAN_PATH,ALARM_AMR_SPK,76,
+ORGAN_PATH,ALARM_WAV_SPK,77,
+ORGAN_PATH,ALARM_TONE_SPK,78,
+ORGAN_PATH,ALARM_MP3_HS,79,
+ORGAN_PATH,ALARM_AAC_HS,80,
+ORGAN_PATH,ALARM_OGG_HS,81,
+ORGAN_PATH,ALARM_MIDI_HS,82,
+ORGAN_PATH,ALARM_AMR_HS,83,
+ORGAN_PATH,ALARM_WAV_HS,84,
+ORGAN_PATH,ALARM_TONE_HS,85,
+ORGAN_PATH,ALARM_MP3_SPK_FSPK,86,
+ORGAN_PATH,ALARM_AAC_SPK_FSPK,87,
+ORGAN_PATH,ALARM_OGG_SPK_FSPK,88,
+ORGAN_PATH,ALARM_MIDI_SPK_FSPK,89,
+ORGAN_PATH,ALARM_AMR_SPK_FSPK,90,
+ORGAN_PATH,ALARM_WAV_SPK_FSPK,91,
+ORGAN_PATH,ALARM_TONE_SPK_FSPK,92,
+ORGAN_PATH,ALARM_MP3_HS_FSPK,93,
+ORGAN_PATH,ALARM_AAC_HS_FSPK,94,
+ORGAN_PATH,ALARM_OGG_HS_FSPK,95,
+ORGAN_PATH,ALARM_MIDI_HS_FSPK,96,
+ORGAN_PATH,ALARM_AMR_HS_FSPK,97,
+ORGAN_PATH,ALARM_WAV_HS_FSPK,98,
+ORGAN_PATH,ALARM_TONE_HS_FSPK,99,
+ORGAN_PATH,NOTIFICATION_MP3_SPK,100,
+ORGAN_PATH,NOTIFICATION_AAC_SPK,101,
+ORGAN_PATH,NOTIFICATION_OGG_SPK,102,
+ORGAN_PATH,NOTIFICATION_MIDI_SPK,103,
+ORGAN_PATH,NOTIFICATION_AMR_SPK,104,
+ORGAN_PATH,NOTIFICATION_WAV_SPK,105,
+ORGAN_PATH,NOTIFICATION_TONE_SPK,106,
+ORGAN_PATH,NOTIFICATION_MP3_HS,107,
+ORGAN_PATH,NOTIFICATION_AAC_HS,108,
+ORGAN_PATH,NOTIFICATION_OGG_HS,109,
+ORGAN_PATH,NOTIFICATION_MIDI_HS,110,
+ORGAN_PATH,NOTIFICATION_AMR_HS,111,
+ORGAN_PATH,NOTIFICATION_WAV_HS,112,
+ORGAN_PATH,NOTIFICATION_TONE_HS,113,
+ORGAN_PATH,NOTIFICATION_MP3_SPK_FSPK,114,
+ORGAN_PATH,NOTIFICATION_AAC_SPK_FSPK,115,
+ORGAN_PATH,NOTIFICATION_OGG_SPK_FSPK,116,
+ORGAN_PATH,NOTIFICATION_MIDI_SPK_FSPK,117,
+ORGAN_PATH,NOTIFICATION_AMR_SPK_FSPK,118,
+ORGAN_PATH,NOTIFICATION_WAV_SPK_FSPK,119,
+ORGAN_PATH,NOTIFICATION_TONE_SPK_FSPK,120,
+ORGAN_PATH,NOTIFICATION_MP3_HS_FSPK,121,
+ORGAN_PATH,NOTIFICATION_AAC_HS_FSPK,122,
+ORGAN_PATH,NOTIFICATION_OGG_HS_FSPK,123,
+ORGAN_PATH,NOTIFICATION_MIDI_HS_FSPK,124,
+ORGAN_PATH,NOTIFICATION_AMR_HS_FSPK,125,
+ORGAN_PATH,NOTIFICATION_WAV_HS_FSPK,126,
+ORGAN_PATH,NOTIFICATION_TONE_HS_FSPK,127,
+ORGAN_PATH,ENFORCED_MP3_SPK,128,
+ORGAN_PATH,ENFORCED_AAC_SPK,129,
+ORGAN_PATH,ENFORCED_OGG_SPK,130,
+ORGAN_PATH,ENFORCED_MIDI_SPK,131,
+ORGAN_PATH,ENFORCED_AMR_SPK,132,
+ORGAN_PATH,ENFORCED_WAV_SPK,133,
+ORGAN_PATH,ENFORCED_TONE_SPK,134,
+ORGAN_PATH,ENFORCED_MP3_HS,135,
+ORGAN_PATH,ENFORCED_AAC_HS,136,
+ORGAN_PATH,ENFORCED_OGG_HS,137,
+ORGAN_PATH,ENFORCED_MIDI_HS,138,
+ORGAN_PATH,ENFORCED_AMR_HS,139,
+ORGAN_PATH,ENFORCED_WAV_HS,140,
+ORGAN_PATH,ENFORCED_TONE_HS,141,
+ORGAN_PATH,ENFORCED_MP3_SPK_FSPK,142,
+ORGAN_PATH,ENFORCED_AAC_SPK_FSPK,143,
+ORGAN_PATH,ENFORCED_OGG_SPK_FSPK,144,
+ORGAN_PATH,ENFORCED_MIDI_SPK_FSPK,145,
+ORGAN_PATH,ENFORCED_AMR_SPK_FSPK,146,
+ORGAN_PATH,ENFORCED_WAV_SPK_FSPK,147,
+ORGAN_PATH,ENFORCED_TONE_SPK_FSPK,148,
+ORGAN_PATH,ENFORCED_MP3_HS_FSPK,149,
+ORGAN_PATH,ENFORCED_AAC_HS_FSPK,150,
+ORGAN_PATH,ENFORCED_OGG_HS_FSPK,151,
+ORGAN_PATH,ENFORCED_MIDI_HS_FSPK,152,
+ORGAN_PATH,ENFORCED_AMR_HS_FSPK,153,
+ORGAN_PATH,ENFORCED_WAV_HS_FSPK,154,
+ORGAN_PATH,ENFORCED_TONE_HS_FSPK,155,
+ORGAN_PATH,VOICE_CALL_SPK,156,
+ORGAN_PATH,VOICE_CALL_HS,157,
+ORGAN_PATH,BLUETOOTH_SCO_SPK,158,
+ORGAN_PATH,BLUETOOTH_SCO_HS,159,
+ORGAN_PATH,DTMF_SPK,160,
+ORGAN_PATH,DTMF_HS,161,
+ORGAN_PATH,TTS_SPK,162,
+ORGAN_PATH,TTS_HS,163,
+ORGAN_PATH,FM_RADIO_SPK,164,
+ORGAN_PATH,FM_RADIO_HS,165,
+ORGAN_PATH,RECORDER_PCM_MIC1,166,
+ORGAN_PATH,RECORDER_AMR_NB_MIC1,167,
+ORGAN_PATH,RECORDER_AAC_MIC1,168,
+ORGAN_PATH,RECORDER_PCM_MIC2,169,
+ORGAN_PATH,RECORDER_AMR_NB_MIC2,170,
+ORGAN_PATH,RECORDER_AAC_MIC2,171,
+ORGAN_PATH,RECORDER_PCM_HSMIC,172,
+ORGAN_PATH,RECORDER_AMR_NB_HSMIC,173,
+ORGAN_PATH,RECORDER_AAC_HSMIC,174,
+ORGAN_PATH,CAMCORDER_PCM_MIC1,175,
+ORGAN_PATH,CAMCORDER_AMR_NB_MIC1,176,
+ORGAN_PATH,CAMCORDER_AAC_MIC1,177,
+ORGAN_PATH,CAMCORDER_PCM_MIC2,178,
+ORGAN_PATH,CAMCORDER_AMR_NB_MIC2,179,
+ORGAN_PATH,CAMCORDER_AAC_MIC2,180,
+ORGAN_PATH,CAMCORDER_PCM_HSMIC,181,
+ORGAN_PATH,CAMCORDER_AMR_NB_HSMIC,182,
+ORGAN_PATH,CAMCORDER_AAC_HSMIC,183,
+ORGAN_PATH,ASR_PCM_MIC1,184,
+ORGAN_PATH,ASR_AMR_NB_MIC1,185,
+ORGAN_PATH,ASR_AAC_MIC1,186,
+ORGAN_PATH,ASR_PCM_MIC2,187,
+ORGAN_PATH,ASR_AMR_NB_MIC2,188,
+ORGAN_PATH,ASR_AAC_MIC2,189,
+ORGAN_PATH,ASR_PCM_HSMIC,190,
+ORGAN_PATH,ASR_AMR_NB_HSMIC,191,
+ORGAN_PATH,ASR_AAC_HSMIC,192,
+ORGAN_PATH,VOIP_SPK,193,
+ORGAN_PATH,VOIP_CALL_HS,194,
+ORGAN_PATH,VOIP_RECORDER_PCM_MIC1,195,
+ORGAN_PATH,VOIP_RECORDER_AMR_NB_MIC1,196,
+ORGAN_PATH,VOIP_RECORDER_AAC_MIC1,197,
+ORGAN_PATH,VOIP_RECORDER_PCM_MIC2,198,
+ORGAN_PATH,VOIP_RECORDER_AMR_NB_MIC2,199,
+ORGAN_PATH,VOIP_RECORDER_AAC_MIC2,200,
+ORGAN_PATH,VOIP_RECORDER_PCM_HSMIC,201,
+ORGAN_PATH,VOIP_RECORDER_AMR_NB_HSMIC,202,
+ORGAN_PATH,VOIP_RECORDER_AAC_HSMIC,203,
+ORGAN_PATH,VOICE_CALL_EPC,204,
+ORGAN_PATH,VOIP_EPC,205,
+ORGAN_PATH,ORGANPATHNUMB,206,
+EE_entry_t_,EE_SYS_RESET_EN,0,
+EE_entry_t_,EE_ASSERT_EN,1,
+EE_entry_t_,EE_EXCEPTION_EN,2,
+EE_entry_t_,EE_WARNING_EN,3,
+EE_entry_t_,EE_NUM_ENTRY_TYPES,4,
+EE_entry_t_,EE_SYS_RESET,300,
+EE_entry_t_,EE_ASSERT,350,
+EE_entry_t_,EE_EXCEPTION,450,
+EE_entry_t_,EE_WARNING,550,
+EE_ExceptionType_t_,EEE_DataAbort,0,
+EE_ExceptionType_t_,EEE_PrefetchAbort,1,
+EE_ExceptionType_t_,EEE_FatalError,2,
+EE_ExceptionType_t_,EEE_SWInterrupt,3,
+EE_ExceptionType_t_,EEE_UndefInst,4,
+EE_ExceptionType_t_,EEE_ReservedInt,5,
+EE_PMU_t_,EE_NO_RESET_SOURCE,0,
+EE_PMU_t_,EE_POWER_ON_RESET,1,
+EE_PMU_t_,EE_EXT_MASTER_RESET,2,
+EE_PMU_t_,EE_WDT_RESET,3,
+EE_ContextType_t_,EE_CT_None,0,
+EE_ContextType_t_,EE_CT_ExecTrace,1,
+EE_ContextType_t_,EE_CT_StackDump,2,
+EE_ContextDataType_t_,EE_CDT_None,0,
+EE_ContextDataType_t_,EE_CDT_ExecTrace,1,
+EE_ContextDataType_t_,EE_CDT_StackDump,2,
+EE_ContextDataType_t_,EE_CDT_UserDefined,16,
+FinalAct_t_,EE_RESET,0,
+FinalAct_t_,EE_STALL,1,
+FinalAct_t_,EE_RESERVED,2,
+FinalAct_t_,EE_EXTERNAL,3,
+FinalAct_t_,EE_RESET_START_BASIC,4,
+FinalAct_t_,EE_RESET_COMM_SILENT,5,
+EE_OnOff_t_,EE_OFF,0,
+EE_OnOff_t_,EE_ON,1,
+EE_WarningOn_t_,EE_WARN_OFF,0,
+EE_WarningOn_t_,EE_WARN_ASSERTCONTINUE,1,
+EE_WarningOn_t_,EE_WARN_ASSERT,2,
+EE_Version_t_,EE_VER_3,3,
+EE_Version_t_,EE_VER,4,
+EE_HSL_V_t_,EE_HSL_OFF,0,
+EE_HSL_V_t_,EE_HSL_1_8V,1,
+EE_HSL_V_t_,EE_HSL_3V,3,
+EE_WdtTimeCfg_t_,EE_WDT_OFF,0,
+EE_WdtTimeCfg_t_,EE_WDT_TIME_6SEC,6000,
+EE_WdtTimeCfg_t_,EE_WDT_TIME_7SEC,7000,
+EE_WdtTimeCfg_t_,EE_WDT_TIME_8SEC,8000,
+EE_WdtTimeCfg_t_,EE_WDT_TIME_10SEC,10000,
+EE_WdtTimeCfg_t_,EE_WDT_TIME_20SEC,20000,
+EE_WdtTimeCfg_t_,EE_WDT_TIME_30SEC,30000,
+EE_WdtTimeCfg_t_,EE_WDT_TIME_MAX,65535,
+EE_DeferredMode_t_,EE_DEFER_NONE,0,
+EE_DeferredMode_t_,EE_DEFER_ASSERTS,1,
+EE_DeferredMode_t_,EE_DEFER_EXCEPTIONS,2,
+EE_DeferredMode_t_,EE_DEFER_ALL,3,
+EE_entry_t,EE_SYS_RESET_EN,0,
+EE_entry_t,EE_ASSERT_EN,1,
+EE_entry_t,EE_EXCEPTION_EN,2,
+EE_entry_t,EE_WARNING_EN,3,
+EE_entry_t,EE_NUM_ENTRY_TYPES,4,
+EE_entry_t,EE_SYS_RESET,300,
+EE_entry_t,EE_ASSERT,350,
+EE_entry_t,EE_EXCEPTION,450,
+EE_entry_t,EE_WARNING,550,
+EE_ExceptionType_t,EEE_DataAbort,0,
+EE_ExceptionType_t,EEE_PrefetchAbort,1,
+EE_ExceptionType_t,EEE_FatalError,2,
+EE_ExceptionType_t,EEE_SWInterrupt,3,
+EE_ExceptionType_t,EEE_UndefInst,4,
+EE_ExceptionType_t,EEE_ReservedInt,5,
+EE_PMU_t,EE_NO_RESET_SOURCE,0,
+EE_PMU_t,EE_POWER_ON_RESET,1,
+EE_PMU_t,EE_EXT_MASTER_RESET,2,
+EE_PMU_t,EE_WDT_RESET,3,
+EE_ContextType_t,EE_CT_None,0,
+EE_ContextType_t,EE_CT_ExecTrace,1,
+EE_ContextType_t,EE_CT_StackDump,2,
+EE_ContextDataType_t,EE_CDT_None,0,
+EE_ContextDataType_t,EE_CDT_ExecTrace,1,
+EE_ContextDataType_t,EE_CDT_StackDump,2,
+EE_ContextDataType_t,EE_CDT_UserDefined,16,
+<end>
+Unions
+<end>
