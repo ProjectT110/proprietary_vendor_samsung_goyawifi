@@ -125,7 +125,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goyawifi/proprietary/lib/lib_SamsungRec_V03011b.so:system/lib/lib_SamsungRec_V03011b.so \
     vendor/samsung/goyawifi/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     vendor/samsung/goyawifi/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v04004.so:system/lib/lib_Samsung_SB_AM_for_ICS_v04004.so \
-    vendor/samsung/goyawifi/proprietary/system/lib/libacdapi_clb.so:system/lib/libacdapi_clb.so \
     vendor/samsung/goyawifi/proprietary/lib/libacm.so:system/lib/libacm.so \
     vendor/samsung/goyawifi/proprietary/lib/libacoustic.so:system/lib/libacoustic.so \
     vendor/samsung/goyawifi/proprietary/lib/libagps_hal.so:system/lib/libagps_hal.so \
